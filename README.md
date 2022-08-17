@@ -4,7 +4,7 @@
 
 ### Purpose
 
-The purpose of this analysis is to see how the different fundraising campaigns for theater performed.   
+	The purpose of this analysis is to see how the different fundraising campaigns for theater performed.   
 Louise's play *Fever* almost reached its fundraising goal in a short time so we will see how the outcomes are correlated with launch dates and goals.
 The outcomes we are looking at are for "successful", "failed", and "canceled". The data is filtered and visualized with graphs in order to find how the theater campaigns fared in these relations.
 
@@ -12,7 +12,7 @@ The outcomes we are looking at are for "successful", "failed", and "canceled". T
 
 ### Analysis of Outcomes Based on Launch Date
 
-I performed the analysis for outcomes based on launch dates with the use of pivot tables and a chart.
+	I performed the analysis for outcomes based on launch dates with the use of pivot tables and a chart.
 The data was filtered by parent category and time frame. The parent category in this case is theater and the time frame used is the months of the year. 
 I used the "Convert Text to Columns Wizard" in order to separate the parent category from the subcategory, this wizard is located under the data tab in excel. The dates were presented in timestamp format, so I created a new column and converted the timestamp to human readable
 format with the formula ` =(((date/60)/60/24)+DATE(1970,1,1))`. I also created a column with just the years by using the function `YEAR()`. Then I created a pivot table that shows the number of successful, failed, and canceled projects by months. The pivot table was sorted
@@ -28,13 +28,13 @@ The results for the line chart:
 
 ### Analysis of Outcomes Based on Goals
 
-The analysis of outcomes based on goals was performed by collecting the outcome and goal data for the subcategory "plays". A table with dollar amount ranges was created and then I was able to use the `countifs()` function to populate each outcome based on
+	The analysis of outcomes based on goals was performed by collecting the outcome and goal data for the subcategory "plays". A table with dollar amount ranges was created and then I was able to use the `countifs()` function to populate each outcome based on
 goal amount for "plays". The formula to sort the data in each range and outcome for plays includes criteria like so `=COUNTIFS(Sheet1!$D:$D,"<1000",Sheet1!$F:$F,"successful",Sheet1!$R:$R,"plays")`. This formula was repeated for each respective outcome and goal range. Then the total number of projects were calculated for each dollar amount range and
 from there I was able to use the `Round()` function to calculate each percentage of outcome. Once all percentages of successful, failed, and canceled outcomes were calculated for each goal range, I created a line chart from this table in order to visualize the data better. 
 
 Table of ranges with percentages calculated:
 
-![Table_Outcomes_vs_Goals.png](/resources/Table_Outcomes_vs_Goals.png)
+![Table_Outcomes_vs_Goals.PNG](/resources/Table_Outcomes_vs_Goals.PNG)
 
 Line chart showing the percentages of each range:
 
@@ -42,7 +42,7 @@ Line chart showing the percentages of each range:
 
 ### Challenges and Difficulties Encountered
 
-I faced a challenge with a "#SPILL!" error when trying to convert the timestamp date to human readable format. 
+	I faced a challenge with a "#SPILL!" error when trying to convert the timestamp date to human readable format. 
 The selection I was making was collecting cells with no data and resulted with seeing a "#SPILL!" and nothing else. I was able to overcome this challenge by
 viewing the count of data in the launch date column and inserted it in my date conversion formula like this `=(((J$2:J$4115/60)/60/24)+DATE(1970,1,1))` so I would not have unnecessary output in the file.
  
