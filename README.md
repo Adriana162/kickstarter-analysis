@@ -29,8 +29,8 @@ The results for the line chart:
 ### Analysis of Outcomes Based on Goals
 
 The analysis of outcomes based on goals was performed by collecting the outcome and goal data for the subcategory "plays". A table with dollar amount ranges was created and then I was able to use the `countifs()` function to populate each outcome based on
-goal amount for "plays". The formula to sort the data in each range and outcome for plays includes criteria like so `=COUNTIFS(Sheet1!$D:$D,"<1000",Sheet1!$F:$F,"successful",Sheet1!$R:$R,"plays")`. This formula was repeated for each respective outcome and goal range. Then the total number of projects were calculated for each dollar amount range and
-from there I was able to use the `Round()` function to calculate each percentage of outcome. Once all percentages of successful, failed, and canceled outcomes were calculated for each goal range, I created a line chart from this table in order to visualize the data better. 
+goal amount for "plays". The formula to sort the data in each range and outcome for plays includes criteria like so `=COUNTIFS(Sheet1!$D:$D,"<1000",Sheet1!$F:$F,"successful",Sheet1!$R:$R,"plays")`. 
+This formula was repeated for each respective outcome and goal range. Then the total number of projects were calculated for each dollar amount range and from there I was able to use the `Round()` function to calculate each percentage of outcome. Once all percentages of successful, failed, and canceled outcomes were calculated for each goal range, I created a line chart from this table in order to visualize the data better. 
 
 Table of ranges with percentages calculated:
 
