@@ -20,7 +20,7 @@ in descending order to show successful outcome first. Lastly, a chart was create
 
 The results for the pivot table:
 
-![PivotTable_Theater_Outcomes.png](/resources/PivotTable_Theater_Outcomes.png)
+![PivotTable_Theater_Outcomes.PNG](/resources/PivotTable_Theater_Outcomes.PNG)
 
 The results for the line chart:
 
